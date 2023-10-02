@@ -1,0 +1,103 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-image: url("../IMG/93c8bd283037c64e7b1d0b40414a99f3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: aliceblue;
+}
+/* Our custom font */
+@font-face{
+    /* name our font */
+    font-family: FontNo1;
+    /* Our path to the font  */
+    src: url("../Fonts/DancingScript-VariableFont_wght.ttf");
+}
+/* Our custom font */
+@font-face{
+    /* name our font */
+    font-family: FontNo2;
+    /* Our path to the font  */
+    src: url("../Fonts/KaushanScript-Regular.ttf");
+}
+/* Our custom font */
+@font-face{
+    /* name our font */
+    font-family: FontNo3;
+    /* Our path to the font  */
+    src: url("../Fonts/SeaweedScript-Regular.ttf");
+}
+.header{
+    overflow: hidden;
+    background-color: rgba(14, 66, 100, 0.3);
+}
+img{
+    padding-top: 5px;
+    padding-left: 5px;
+    height: 52px;
+    width: auto;
+}
+a{
+    float: right;
+    font-style: italic;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-size: 2em;
+    font-weight: 800;
+}
+section{
+    top: 20px;
+}
+.blink 
+ {	/* Adding Blink on text */
+        animation: blinker 1.5s linear infinite;
+        color: #b3c2bd;
+        text-align: center;
+	    font-weight: bold;
+	    font-family: FontNo3;
+        font-size: 3.8em;
+        font-weight: bold;
+        letter-spacing: 3px;
+        text-shadow: 3px 3px 3px #a8a3a3;
+ }
+      @keyframes blinker 
+	  {
+        50% 
+		{
+          opacity: 0;
+        }
+      }
+.lyrics{
+    padding: 0px 100px;
+    text-align: center;
+}
+p{
+    padding: 10px 0px;
+    text-align: center;
+    letter-spacing: 1.5px;
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(58, 56, 56, 0.5); /* Black background with 0.5 opacity */
+}
+main .lyrics div p::first-letter{
+    font-weight: 600;
+    font-size: 42px;
+    text-shadow: 2px 2px 2px #a8a3a3;
+}
+.lyrics  div:nth-child(odd){
+    font-family: FontNo1;
+    color: rgb(161, 246, 217);
+    font-size: 1.5em;
+}
+.lyrics  div:nth-child(even){
+    font-family: FontNo2;
+    color: #d7c9c9;
+    font-size: 1em;
+}
+.lyrics  div:nth-child(even) p::first-letter{
+    color: rgb(161, 246, 217);
+}
+.lyrics  div:nth-child(odd) p::first-letter{
+    color: #d7c9c9;
+}
