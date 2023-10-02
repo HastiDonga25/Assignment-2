@@ -73,31 +73,63 @@ section{
     padding: 0px 100px;
     text-align: center;
 }
+.lyrics div{
+    padding: 20px 0px;
+    line-height: 4px;
+}
 p{
-    padding: 10px 0px;
     text-align: center;
     letter-spacing: 1.5px;
+}
+.lyrics div:nth-child(odd){
     background: rgb(0, 0, 0); /* Fallback color */
     background: rgba(58, 56, 56, 0.5); /* Black background with 0.5 opacity */
 }
+.lyrics div:nth-child(even){  
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(123, 119, 119, 0.5); /* Black background with 0.5 opacity */       
+}
 main .lyrics div p::first-letter{
-    font-weight: 600;
-    font-size: 42px;
+    font-weight: 400;
+    font-size: 32px;
     text-shadow: 2px 2px 2px #a8a3a3;
 }
-.lyrics  div:nth-child(odd){
+.lyrics div p:nth-child(odd){
     font-family: FontNo1;
     color: rgb(161, 246, 217);
     font-size: 1.5em;
 }
-.lyrics  div:nth-child(even){
+.lyrics div p:nth-child(even){
     font-family: FontNo2;
     color: #d7c9c9;
     font-size: 1em;
 }
-.lyrics  div:nth-child(even) p::first-letter{
+.lyrics div p:nth-child(even)::first-letter{
     color: rgb(161, 246, 217);
 }
-.lyrics  div:nth-child(odd) p::first-letter{
+.lyrics div p:nth-child(odd)::first-letter{
     color: #d7c9c9;
+}
+span{
+    font-family: FontNo3;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #736060;
+}
+.part1 span{
+    color: rgb(10, 163, 10);
+}
+.part2 span{
+    color: rgb(52, 139, 177);
+}
+.part3 span{
+    color: rgb(173, 96, 225);
+}
+.part4 span{
+    color: rgb(206, 119, 154);
+}
+.part6 span{
+    color: rgb(215, 170, 93);
+}
+.part8 span{
+    color: rgb(208, 110, 115);
 }
